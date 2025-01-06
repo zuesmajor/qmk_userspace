@@ -1,7 +1,8 @@
 {
-    "userspace_version": "1.0",
+    "userspace_version": "1.1",
     "build_targets": [
         ["elhector", "default"],
-        ["bastardkb/charybdis/3x5/v2/elitec", "via"]
+        ["bastardkb/charybdis/3x5/v2/elitec", "via"],
+        ["bastardkb/charybdis/3x5/v2/splinky_3", "via"]
     ]
 }
