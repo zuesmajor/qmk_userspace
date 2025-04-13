@@ -36,7 +36,10 @@ const uint16_t PROGMEM left_brack[] = {KC_R, KC_T, COMBO_END};
 const uint16_t PROGMEM right_brack[] = {KC_Y, KC_U, COMBO_END};
 const uint16_t PROGMEM left_curly[] = {KC_C, KC_V, COMBO_END};
 const uint16_t PROGMEM right_curly[] = {KC_M, KC_COMM, COMBO_END};
-const uint16_t PROGMEM double_quotes[] = {LGUI_T(KC_A), RGUI_T(KC_QUOT), COMBO_END};
+const uint16_t PROGMEM double_quotes[] = {RALT_T(KC_L), RGUI_T(KC_QUOT), COMBO_END};
+const uint16_t PROGMEM dash[] = {KC_Q, KC_P, COMBO_END};
+const uint16_t PROGMEM underscore[] = {KC_W, KC_O, COMBO_END};
+
 
 combo_t key_combos[] = {
     COMBO(left_paran, KC_LPRN),
@@ -46,6 +49,8 @@ combo_t key_combos[] = {
     COMBO(left_curly, KC_LCBR),
     COMBO(right_curly, KC_RCBR),
     COMBO(double_quotes, KC_DQUO),
+    COMBO(dash, KC_MINUS),
+    COMBO(underscore, KC_UNDS)
 };
 
 // Automatically enable sniping-mode on the pointer layer.
