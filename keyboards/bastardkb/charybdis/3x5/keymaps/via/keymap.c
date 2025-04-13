@@ -38,7 +38,7 @@ const uint16_t PROGMEM left_curly[] = {KC_C, KC_V, COMBO_END};
 const uint16_t PROGMEM right_curly[] = {KC_M, KC_COMM, COMBO_END};
 const uint16_t PROGMEM double_quotes[] = {RALT_T(KC_L), RGUI_T(KC_QUOT), COMBO_END};
 const uint16_t PROGMEM dash[] = {KC_Q, KC_P, COMBO_END};
-const uint16_t PROGMEM underscore[] = {KC_W, KC_O, COMBO_END};
+const uint16_t PROGMEM underscore[] = {KC_E, KC_P, COMBO_END};
 
 
 combo_t key_combos[] = {
