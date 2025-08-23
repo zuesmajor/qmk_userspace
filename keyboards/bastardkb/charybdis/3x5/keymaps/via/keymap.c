@@ -28,7 +28,7 @@ enum charybdis_keymap_layers {
     LAYER_POINTER,
     LAYER_NUMERAL,
     LAYER_SYMBOLS,
-    LAYER_GAMING
+    LAYER_GAMING,
 };
 
 const uint16_t PROGMEM left_paran[] = {LCTL_T(KC_D), LSFT_T(KC_F), COMBO_END};
@@ -76,7 +76,6 @@ static uint16_t auto_pointer_layer_timer = 0;
 #define BSP_NUM LT(LAYER_NUMERAL, KC_BSPC)
 #define _L_PTR(KC) LT(LAYER_POINTER, KC)
 #define FUN_GAM TG(LAYER_GAMING)
-#define RESET_LAYER TG(0)
 
 #ifndef POINTING_DEVICE_ENABLE
 #    define DRGSCRL KC_NO
@@ -128,9 +127,9 @@ static uint16_t auto_pointer_layer_timer = 0;
  */
 #define LAYOUT_LAYER_GAMING                                                                   \
     KC_1,KC_2, KC_3, KC_4, KC_5, KC_6, RGB_RMOD, RGB_TOG, RGB_MOD, XXXXXXX,                   \
-    KC_MPRV, KC_VOLD, KC_Q, KC_W, KC_E, KC_R, KC_VOLD, KC_MUTE, KC_VOLU, KC_MNXT,             \
-    KC_LSFT, XXXXXXX, KC_A, KC_S, KC_D, KC_F,  EE_CLR, XXXXXXX, XXXXXXX, RESET_LAYER,         \
-                      _______, KC_SPC, KC_MSTP, KC_MSTP, KC_MPLY
+    XXXXXXX, KC_Q, KC_W, KC_E, KC_R, XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, KC_MNXT,             \
+    KC_LSFT, KC_A, KC_S, KC_D, KC_F, XXXXXXX,  EE_CLR, XXXXXXX, XXXXXXX, FUN_GAM,         \
+                      KC_ESC, KC_SPC, KC_G, KC_MSTP, KC_MPLY
 
 /**
  * \brief Media layer.
