@@ -76,7 +76,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 #define BSP_NUM LT(LAYER_NUMERAL, KC_BSPC)
 #define _L_PTR(KC) LT(LAYER_POINTER, KC)
 #define FUN_GAM TG(LAYER_GAMING)
-#define RESET_LAYER TG(LAYOUT_LAYER_BASE)
+#define RESET_LAYER TG(0)
 
 #ifndef POINTING_DEVICE_ENABLE
 #    define DRGSCRL KC_NO
