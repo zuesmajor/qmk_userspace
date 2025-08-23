@@ -127,8 +127,8 @@ static uint16_t auto_pointer_layer_timer = 0;
  */
 #define LAYOUT_LAYER_GAMING                                                                   \
     KC_1,KC_2, KC_3, KC_4, KC_5, KC_6, RGB_RMOD, RGB_TOG, RGB_MOD, XXXXXXX,                   \
-    XXXXXXX, KC_Q, KC_W, KC_E, KC_R, XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, KC_MNXT,             \
-    KC_LSFT, KC_A, KC_S, KC_D, KC_F, XXXXXXX,  EE_CLR, XXXXXXX, XXXXXXX, FUN_GAM,         \
+    KC_LCTL, KC_Q, KC_W, KC_E, KC_R, XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, KC_MNXT,             \
+    KC_LSFT, KC_A, KC_S, KC_D, KC_F, KC_B,  EE_CLR, XXXXXXX, XXXXXXX, FUN_GAM,         \
                       KC_ESC, KC_SPC, KC_G, KC_MSTP, KC_MPLY
 
 /**
