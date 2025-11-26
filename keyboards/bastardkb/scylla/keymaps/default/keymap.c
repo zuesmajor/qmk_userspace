@@ -21,31 +21,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* Layer 0: Base Layer
      * ┌────────┬────────┬────────┬────────┬────────┬────────┐                    ┌────────┬────────┬────────┬────────┬────────┬────────┐
-     * │  ESC   │   1    │   2    │   3    │   4    │   5    │                    │   6    │   7    │   8    │   9    │   0    │  BSPC  │
+     * │  ESC   │   1    │   2    │   3    │   4    │   5    │                    │   6    │   7    │   8    │   9    │   0    │   `    │
      * ├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
-     * │  TAB   │   Q    │   W    │   E    │   R    │   T    │                    │   Y    │   U    │   I    │   O    │   P    │    '   │
+     * │  TAB   │   Q    │   W    │   E    │   R    │   T    │                    │   Y    │   U    │   I    │   O    │   P    │    -   │
      * ├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
-     * │  SHIFT │   A    │   S    │   D    │   F    │   G    │                    │   H    │   J    │   K    │   L    │   ;    │   Sft  │
+     * │  SHIFT │   A    │   S    │   D    │   F    │   G    │                    │   H    │   J    │   K    │   L    │   ;    │    '   │
      * ├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
-     * │  CTRL  │   Z    │   X    │   C    │   V    │   B    │                    │   N    │   M    │   ,    │   .    │   /    │  CTL   │
+     * │  CTRL  │   Z    │   X    │   C    │   V    │   B    │                    │   N    │   M    │   ,    │   .    │   /    │    |   │
      * └────────┴────────┴────────┴────────┴────────┴────────┘                    └────────┴────────┴────────┴────────┴────────┴────────┘
      *                            ┌────────┬────────┬────────┐                    ┌────────┬────────┬────────┐
-     *                            │  CTRL  │  SPACE │  MO(1) │                    │  MO(2) │  ENTER │  GUI   │
+     *                            │  LSFT  │  SPACE │  MO(1) │                    │  MO(2) │  ENTER │  BSPC  │
      *                            └────────┴────────┴────────┘                    └────────┴────────┴────────┘
      *                                     ┌────────┬────────┐                    ┌────────┬────────┐
-     *                                     │  GUI  │  BSPC  │                    │  GUI   │  ALT   │
+     *                                     │  GUI   │  BSPC  │                    │  ALT   │  SFT   │
      *                                     └────────┴────────┘                    └────────┴────────┘
      */
     [0] = LAYOUT_split_4x6_5(
         // Left Hand
         KC_ESC,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,       // Right Hand
                                                                   KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_GRV,
-        KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,       KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_QUOT,
-        KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,       KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_RSFT,
-        KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RCTL,
+        KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,       KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_MINS,
+        KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,       KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
+        KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_PIPE,
         // Left Thumb Cluster                                    // Right Thumb Cluster
                  KC_LSFT, KC_SPC,  MO(1),                                 MO(2),   KC_ENT,  KC_BSPC,
-                          KC_LGUI, KC_BSPC,                                        KC_MINS,  KC_RALT
+                          KC_LGUI, KC_BSPC,                                        KC_RALT,  KC_RSFT
     ),
 
     /* Layer 1: Numbers & Symbols
@@ -99,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_F12,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,      // Right Hand
                                                                   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,
         _______, _______, RM_PREV, RM_TOGG, RM_NEXT, KC_LBRC,    KC_RBRC, _______, KC_NUM,  KC_INS,  KC_SCRL, KC_MUTE,
-        _______, KC_LEFT, KC_UP,   KC_DOWN, KC_RGHT, KC_LPRN,    KC_RPRN, KC_MPRV, KC_MPLY, KC_MNXT, _______, KC_VOLU,
+        _______, KC_LEFT, KC_UP,   KC_DOWN, KC_RGHT, KC_LPRN,    KC_RPRN, KC_LEFT, KC_UP,   KC_DOWN, KC_RGHT, KC_VOLU,
         _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______, _______, KC_VOLD,
         // Left Thumb Cluster                                    // Right Thumb Cluster
                  KC_LCTL, KC_HOME, KC_TRNS,                               KC_TRNS, KC_RALT, QK_BOOT,
