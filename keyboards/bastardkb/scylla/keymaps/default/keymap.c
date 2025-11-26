@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_PIPE,
         // Left Thumb Cluster                                    // Right Thumb Cluster
                  KC_LSFT, KC_SPC,  MO(1),                                 MO(2),   KC_ENT,  KC_BSPC,
-                          KC_LGUI, KC_BSPC,                                        KC_RALT,  KC_RSFT
+                          KC_LGUI, KC_RCTL,                                        KC_RALT,  KC_RSFT
     ),
 
     /* Layer 1: Numbers & Symbols
