@@ -126,7 +126,7 @@ static uint16_t auto_pointer_layer_timer = 0;
  * \brief Gaming layer.
  */
 #define LAYOUT_LAYER_GAMING                                                                   \
-    KC_1,KC_2, KC_3, KC_4, KC_5, KC_6, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   \
+    KC_1,KC_2, KC_3, KC_4, KC_X, KC_6, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   \
     KC_LCTL, KC_Q, KC_W, KC_E, KC_R, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,             \
     KC_LSFT, KC_A, KC_S, KC_D, KC_F, KC_B,  KC_Z, KC_X, KC_C, FUN_GAM,         \
                       KC_Z, KC_SPC, KC_G, KC_ESC, KC_MPLY
