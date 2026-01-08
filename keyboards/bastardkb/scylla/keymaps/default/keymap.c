@@ -30,10 +30,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * │  CTRL  │   Z    │   X    │   C    │   V    │   B    │                    │   N    │   M    │   ,    │   .    │   /    │    |   │
      * └────────┴────────┴────────┴────────┴────────┴────────┘                    └────────┴────────┴────────┴────────┴────────┴────────┘
      *                            ┌────────┬────────┬────────┐                    ┌────────┬────────┬────────┐
-     *                            │  LSFT  │  SPACE │  MO(2) │                    │  MO(1) │  ENTER │  BSPC  │
+     *                            │  LSFT  │  SPACE │  MO(2) │                    │LT1,ENT │  BSPC  │  RSFT  │
      *                            └────────┴────────┴────────┘                    └────────┴────────┴────────┘
      *                                     ┌────────┬────────┐                    ┌────────┬────────┐
-     *                                     │  GUI   │  BSPC  │                    │  ALT   │  SFT   │
+     *                                     │  GUI   │  RCTL  │                    │  ALT   │  ESC   │
      *                                     └────────┴────────┘                    └────────┴────────┘
      */
     [0] = LAYOUT_split_4x6_5(
@@ -44,8 +44,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,       KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
         KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_PIPE,
         // Left Thumb Cluster                                    // Right Thumb Cluster
-                 KC_LSFT, KC_SPC,  MO(2),                                 MO(1),   KC_ENT,  KC_BSPC,
-                          KC_LGUI, KC_RCTL,                                        KC_RALT,  KC_RSFT
+                 KC_LSFT, KC_SPC,  MO(2),                                 LT(1, KC_ENT),   KC_BSPC,  KC_RSFT,
+                          KC_LGUI, KC_LCTL,                                        KC_RALT,  KC_RCTL
     ),
 
     /* Layer 1: Numbers & Symbols
@@ -99,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_F12,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,      // Right Hand
                                                                   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,
         _______, KC_LCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_RCBR,    KC_RBRC, _______, KC_NUM,  KC_INS,  KC_SCRL, KC_MUTE,
-        _______, KC_COLN,  KC_DLR, KC_PERC, KC_CIRC, KC_PLUS,    KC_RPRN, KC_LEFT, KC_UP,   KC_DOWN, KC_RGHT, KC_VOLU,
+        _______, KC_COLN,  KC_DLR, KC_PERC, KC_CIRC, KC_PLUS,    KC_RPRN, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_VOLU,
         _______, KC_TILD, KC_EXLM,   KC_AT, KC_HASH, KC_PIPE,    _______, _______, _______, _______, _______, KC_VOLD,
         // Left Thumb Cluster                                    // Right Thumb Cluster
                  KC_LCTL, KC_HOME, KC_TRNS,                               KC_TRNS, KC_RALT, QK_BOOT,
